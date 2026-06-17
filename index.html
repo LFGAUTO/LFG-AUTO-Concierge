@@ -540,10 +540,24 @@ tr:hover td{background:#111;}
 
       <!-- AFFILIATES TAB -->
       <div id="tab-aff">
-        <div class="stats-grid">
+        <div class="stats-grid" style="grid-template-columns:repeat(3,1fr)">
           <div class="stat-box"><div class="stat-n" id="s-aff">0</div><div class="stat-l">Affiliates</div></div>
           <div class="stat-box"><div class="stat-n" id="s-leads">0</div><div class="stat-l">Total Leads</div></div>
           <div class="stat-box"><div class="stat-n" id="s-top" style="font-size:18px;margin-top:6px;">—</div><div class="stat-l">Top Source</div></div>
+        </div>
+        <div class="stats-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:28px;">
+          <div class="stat-box" style="border-top-color:#44aa44;">
+            <div class="stat-n" id="s-sold" style="color:#44aa44;">0</div>
+            <div class="stat-l">Deals Sold</div>
+          </div>
+          <div class="stat-box" style="border-top-color:#44aa44;">
+            <div class="stat-n" id="s-owed" style="color:#44aa44;font-size:24px;margin-top:6px;">$0</div>
+            <div class="stat-l">Total Owed to Affiliates</div>
+          </div>
+          <div class="stat-box" style="border-top-color:#888;">
+            <div class="stat-n" id="s-paid" style="color:#888;font-size:24px;margin-top:6px;">$0</div>
+            <div class="stat-l">Total Paid Out</div>
+          </div>
         </div>
         <div class="add-box">
           <div class="add-box-h">Add New Affiliate</div>
@@ -560,7 +574,7 @@ tr:hover td{background:#111;}
         <div class="sec-title">YOUR AFFILIATE NETWORK</div>
         <div style="overflow-x:auto;">
           <table>
-            <thead><tr><th>Business</th><th>Owner</th><th>Type</th><th>Phone</th><th>Leads</th><th>Actions</th></tr></thead>
+            <thead><tr><th>Business</th><th>Owner</th><th>Type</th><th>Phone</th><th>Leads</th><th>Sold</th><th>Owed</th><th>Actions</th></tr></thead>
             <tbody id="aff-body"><tr><td colspan="6"><div class="empty">No affiliates yet. Add your first one above.</div></td></tr></tbody>
           </table>
         </div>
@@ -571,7 +585,7 @@ tr:hover td{background:#111;}
         <div class="sec-title">INCOMING LEADS</div>
         <div style="overflow-x:auto;">
           <table>
-            <thead><tr><th>Name</th><th>Contact</th><th>Intent</th><th>Vehicle</th><th>Timeline</th><th>Trade-In</th><th>Source</th><th>Received</th></tr></thead>
+            <thead><tr><th>Name</th><th>Contact</th><th>Intent</th><th>Vehicle</th><th>Source</th><th>Received</th><th>Status</th><th>Actions</th></tr></thead>
             <tbody id="leads-body"><tr><td colspan="8"><div class="empty">No leads yet.</div></td></tr></tbody>
           </table>
         </div>
